@@ -1,0 +1,20 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "lehi beltran",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.x"
+  },
+  "keywords": [
+    "portfolio"
+  ]
+}

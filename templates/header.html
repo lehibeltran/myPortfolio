@@ -1,0 +1,70 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" ui-sref="home"><svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 107.57"><path d="M30 10 L30,90 M10 90 H3,90 L5.4,60" stroke="#fff" stroke-width="10" transform="translate(0 0)" style="fill:transparent"/></svg></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <!--<li class="active"><a ui-sref="home">Home <span class="sr-only">(current)</span></a></li>-->
+                <li><a ui-sref="portfolio">Portfolio</a></li>
+                <!--<li class="dropdown">-->
+                    <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Choose-->
+                        <!--your Theme <span class="caret"></span></a>-->
+                    <!--<ul class="dropdown-menu" role="menu">-->
+                        <!--<li><a href="#" ng-click="setTheme('darkly')">Darkly</a></li>-->
+                        <!--<li class="divider"></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            </ul>
+            <!--<form class="navbar-form navbar-left" role="search">-->
+            <!--<div class="form-group">-->
+            <!--<input type="text" class="form-control" placeholder="Search">-->
+            <!--</div>-->
+            <!--<button type="submit" class="btn btn-default">Submit</button>-->
+            <!--</form>-->
+            <ul class="nav navbar-nav navbar-right" id="themes">
+                <!--<ul class="nav navbar-nav" id="themes">-->
+                    <li><button type="button" class="darkly" ng-click="setTheme('darkly')"></button></li>
+                    <li class="divider"></li>
+                    <li><button type="button" class="flatly" ng-click="setTheme('flatly')"></button></li>
+                    <li class="divider"></li>
+                    <li><button type="button" class="superhero" ng-click="setTheme('superhero')"></button></li>
+                    <li class="divider"></li>
+                    <li><button type="button" class="yeti" ng-click="setTheme('yeti')"></button></li>
+                <!--</ul>-->
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="splash">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="avatar" src="images/mysuit.jpg" alt="Lehi">
+                <h2>Lehi Beltran
+                    <span>Web & Backend Developer</span>
+                </h2>
+                <div id="social">
+                    <a class="linkedin" href="http://linkedin.com/in/lehi-beltran-4456803a" data-username="10998304">LinkedIn</a>
+                    <a class="github" href="https://github.com/lehibeltran86/">Github</a>
+                    <a class="email" href="mailto:lehibeltran@gmail.com">Email me</a>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
