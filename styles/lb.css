@@ -1,11 +1,46 @@
-.navbar-default{background-color:transparent;border-color:transparent}
+#canvas {
+    background-image: url('../images/starry.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    z-index:-1;
+    top: 0;
+}
+.splash{
+    position: absolute;
+    z-index:1;
+    top: 0;
+    width: 100%;
+}
 .avatar {
     display: block;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     margin: 0 auto;
     z-index: -1;
+}
+.section-tout h2 {
+    border-bottom: 1px solid #f4f3f3;
+    display: block;
+    width: 100%;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+.section-tout h2 span {
+    margin: 0;
+    display: block;
+    width: 780px;
+    margin: 0 auto;
+}
+.section-tout h2 span em {
+    border-bottom: 1px solid #444948;
+    font-style: normal;
+    display: inline-block;
+    padding: 20px 0;
+    height: 10px;
 }
 img, a img, :link img, :visited img {
     border: 0;
@@ -39,6 +74,9 @@ header-dir h2 span {
 #social a.email {
     background-image: url(../images/email.png);
 }
+#social a.resume {
+    background-image: url(../images/star-4-48.png);
+}
 #social a {
     width: 50px;
     height: 50px;
@@ -55,21 +93,25 @@ header-dir h2 span {
 }
 #logo {
     position: fixed;
-    top: 20px;
+    top: 11px;
     left: 20px;
     width: 20px;
 }
+#themes{
+    text-align: center;
+    display: inline-block;
+}
 #themes .darkly{
-    background-color: #284156;
+    background-color: #375a7f;
 }
 #themes .flatly{
-    background-color: #1a242f;
+    background-color: #2c3e50;
 }
 #themes .superhero{
-    background-color: rgb(72, 85, 99);
+    background-color: #4e5d6c;
 }
 #themes .yeti{
-    background-color: #272727;
+    background-color: #333333;
 }
 
 #contact {
@@ -108,4 +150,43 @@ header-dir h2 span {
     text-transform: uppercase;
     font-family: "ProximaNovaSemibold";
     margin-bottom: 20px;
+    text-decoration: none;
+}
+.email-button:hover {
+    background: #444948;
+    color: #fff;
+    text-decoration: none;
+}
+/*Projects button*/
+.image:hover img{
+    opacity:0.1;
+}
+.image:hover input {
+    display: block;
+}
+.image input {
+    position:absolute;
+    display:none;
+}
+.image input.view {
+    top:105px;
+    left:135px;
+    cursor: pointer;
+    border: none;
+    width: 70px;
+    height: 70px;
+    background: url('../images/photo-48.png') no-repeat 0 0;
+    background-position: center center;
+    text-align: center;
+}
+.image input.play {
+    top:105px;
+    left:205px;
+    cursor: pointer;
+    border: none;
+    width: 70px;
+    height: 70px;
+    background: url('../images/arrow-37-48.png') no-repeat 0 0;
+    background-position: center center;
+    text-align: center;
 }

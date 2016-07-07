@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Lehi Beltran's Portfolio</title>
-    <link id="bootstrap" rel="stylesheet" href="https://bootswatch.com/flatly/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/lb.css">
+    <link id="bootstrap" rel="stylesheet" href="https://bootswatch.com/darkly/bootstrap.min.css">
+    <link id="style" rel="stylesheet" href="styles/lb.css">
     <link rel="stylesheet" href="styles/custom.css">
 </head>
-<body ng-controller="mainCtrl">
-<ui-view></ui-view>
+<body>
 
-<section id="contact">
-    <h2>Let's work together.</h2>
-    <h3>I'm currently accepting job proposals.</h3>
-    <a href="mailto:lehibeltran@gmail.com" class="email-button">Email Lehi</a>
-</section>
+<ui-view></ui-view>
 
 <script src="node_modules/jquery/dist/jquery.js"></script>
 <script src="node_modules/angular/angular.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="styles/custom.js"></script>
 <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
-<script src="app.js"></script>
-<script src="mainCtrl.js"></script>
-<script src="headerDir.js"></script>
+<script src="js/app.js"></script>
+<script src="js/headerDir.js"></script>
+<script src="js/bodyDir.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,58 @@
+
+<div class="section-tout">
+    <h2><span><em>Projects</em></span></h2>
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-6">
+                <div class="preview">
+                    <div class="image">
+                        <h3><span><em>Social App in AngularJS/Firebase</em></span></h3>
+                        <img src="images/DevMtn-Social-app.jpg" class="img-responsive" alt="socialApp">
+                        <input class="view" data-toggle="modal" data-target="#imageModal" type="button" ng-click="loadModal('images/DevMtn-Social-app.jpg', 'socialApp')">
+                        <input class="play" type="button"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="preview">
+                    <div class="image">
+                        <h3><span><em>Social App in AngularJS/Firebase</em></span></h3>
+                        <img src="images/mysuit.jpg" class="img-responsive" alt="socialApp">
+                        <input class="view" data-toggle="modal" data-target="#imageModal" type="button" ng-click="loadModal('images/mysuit.jpg')">
+                        <input class="play" type="button"/>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <div class="preview">
+                    <div class="image">
+                        <h3><span><em>Social App in AngularJS/Firebase</em></span></h3>
+                        <img src="images/i.jpg" class="img-responsive" alt="socialApp">
+                        <input data-toggle="modal" data-target="#imageModal" class="view" type="button" ng-click="loadModal('images/i.jpg')">
+                        <input class="play" type="button"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="purchaseLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" ng-click="closing()">&times;</button>
+                        <h4 class="modal-title">{{modalTitle}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img ng-src="{{imageValue}}" style="width:100%;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<section id="contact">
+    <h2>Let's work together.</h2>
+    <h3>I'm currently accepting job proposals.</h3>
+    <a href="mailto:lehibeltran@gmail.com" class="email-button">Email Lehi</a>
+</section>
