@@ -190,3 +190,7 @@ header-dir h2 span {
     background-position: center center;
     text-align: center;
 }
+.image input.play:hover{
+    background: url('../images/No_sign.png') no-repeat 0 0;
+    background-position: center center;
+}
