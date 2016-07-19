@@ -4,21 +4,21 @@ angular.module('myApp').directive('headerDir', function ($interval) {
         restrict: 'E',
         link: function (scope, elem, attrs) {
             scope.setTheme = function (theme) {
-                var link = document.createElement('link'), link2 = document.createElement('link');
+                var link = document.createElement('link');//, link2 = document.createElement('link');
 
                 link.setAttribute("id", "bootstrap");
-                link2.setAttribute("id", "style");
+                //link2.setAttribute("id", "style");
 
                 link.rel = 'stylesheet';
-                link2.rel = 'stylesheet';
+                //link2.rel = 'stylesheet';
 
-                link.href = "https://bootswatch.com/" + theme + "/bootstrap.min.css";
-                link2.href = "styles/lb.css";
+                link.href = "../styles/" + theme + "/bootstrap.min.css";
+                //link2.href = "styles/lb.css";
 
                 $('#bootstrap').remove();
                 $('head').append(link);
-                $('#style').remove();
-                $('head').append(link2);
+                // $('#style').remove();
+                // $('head').append(link2);
             };
 
             //Lets create a simple particle system in HTML5 canvas and JS

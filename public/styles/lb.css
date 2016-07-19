@@ -113,9 +113,8 @@ header-dir h2 span {
 #themes .yeti{
     background-color: #333333;
 }
-#about {
-    padding: 20px 0 0 0;
-}
+#apps {padding: 60px 0;}
+#about {padding: 20px 0 0 0;}
 #contact {
     clear: both;
     display: block;
