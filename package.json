@@ -4,7 +4,8 @@
   "description": "portfolio",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "lehi beltran",
   "license": "MIT",
@@ -17,5 +18,14 @@
   },
   "keywords": [
     "portfolio"
-  ]
+  ],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lehibeltran86/myPortfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lehibeltran86/myPortfolio/issues"
+  },
+  "homepage": "https://github.com/lehibeltran86/myPortfolio#readme"
 }
