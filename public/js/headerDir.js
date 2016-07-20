@@ -16,17 +16,23 @@ angular.module('myApp').directive('headerDir', function ($interval) {
                 // $('#style').remove();
                 // $('head').append(link2);
             };
-
+            // Register an event listener to
+            // call the resizeCanvas() function each time
+            // the window is resized.
+            window.addEventListener('resize', resizeCanvas, false);
             //Lets create a simple particle system in HTML5 canvas and JS
             //Initializing the canvas
             var canvas = document.getElementById("canvas");
             var ctx = canvas.getContext("2d");
-
-            //Canvas dimensions
-            var W = window.innerWidth; var H = 526;
-            canvas.width = W;
-            canvas.height = H;
-
+            var W, H;
+            resizeCanvas();
+            function resizeCanvas() {
+                //Canvas dimensions
+                W = window.innerWidth;
+                H = 526;
+                canvas.width = W;
+                canvas.height = H;
+            }
             //Lets create an array of particles
             var particles = [];
             for(var i = 0; i < 10; i++)
@@ -102,7 +108,7 @@ angular.module('myApp').directive('headerDir', function ($interval) {
                     if(p.y > H+50) p.y = -50;
                 }
             }
-            $interval(draw, 40);
+            $interval(draw, 38);
         }
     }
 });
