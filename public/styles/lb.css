@@ -17,9 +17,10 @@ body-dir .section-tout {
     padding-top: 20px;
 }
 #canvas {
-    background-image: url('../images/starry.jpeg');
+    background-image: url('../images/starryn.png');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    width: 100%;
     z-index:-1;
     top: 0;
 }
