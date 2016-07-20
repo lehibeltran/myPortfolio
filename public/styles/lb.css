@@ -1,5 +1,21 @@
-html, body { width:100%; height:100%; } /* just to be sure these are full screen*/
-canvas { display:block; } /* To remove the scrollbars */
+/*------------------ @reset ------------------*/
+body,html {margin:0;padding: 0;width: 100%;height:100%;}
+#home{
+    height: 526px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+/*canvas { display:block; } !* To remove the scrollbars *!*/
+body-dir .section-tout {
+    margin: 526px auto 0 auto;
+    background-color: #222222;
+    position: relative;
+    width: 100%;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    z-index: 3;
+    padding-top: 20px;
+}
 #canvas {
     background-image: url('../images/starry.jpeg');
     background-size: cover;
@@ -198,3 +214,41 @@ header-dir h2 span {
     background: url('../images/No_sign.png') no-repeat 0 0;
     background-position: center center;
 }
+
+/*@media only screen and (max-width: 640px) {*/
+    /*.portfolio,*/
+    /*.portfolio .column,*/
+    /*footer,*/
+    /*#contact form,*/
+    /*#container,*/
+    /*#container h2 span { width: 100%; box-sizing: border-box; }*/
+
+    /*#container { margin-bottom: 0; }*/
+
+    /*footer { padding-top: 0; padding-bottom: 10px; }*/
+
+    /*.portfolio section a.item,*/
+    /*.portfolio section a.item img,*/
+    /*.portfolio section.thirds,*/
+    /*.portfolio section.thirds:nth-child(2),*/
+    /*.portfolio section.column:nth-child(2),*/
+    /*.portfolio section.column { padding: 0; margin: 0; float: none; width: 100%; }*/
+
+    /*.portfolio section a.item,*/
+    /*.portfolio section.thirds .icon,*/
+    /*.portfolio section.thirds .item { margin-bottom: 10px; }*/
+
+    /*#container,*/
+    /*#contact form {*/
+        /*padding-left: 10px;*/
+        /*padding-right: 10px;*/
+    /*}*/
+
+    /*section.ethos,*/
+    /*#totop,*/
+    /*#container h2 span em.righty { display: none; }*/
+
+    /*div.button { padding-top: 10px; }*/
+    /*header .ryan { padding-top: 120px; }*/
+    /*header h2 span { padding-top: 0; padding-bottom: 20px; }*/
+/*}*/

@@ -3,7 +3,7 @@ angular.module('myApp').directive('headerDir', function ($interval) {
         templateUrl: '../views/header.html',
         restrict: 'E',
         link: function (scope, elem, attrs) {
-            scope.setTheme = function (theme) {
+            scope.setTheme = function (theme, color) {
                 var link = document.createElement('link');//, link2 = document.createElement('link');
                 link.setAttribute("id", "bootstrap");
                 //link2.setAttribute("id", "style");
@@ -13,6 +13,7 @@ angular.module('myApp').directive('headerDir', function ($interval) {
                 //link2.href = "styles/lb.css";
                 $('#bootstrap').remove();
                 $('head').append(link);
+                $('body-dir > .section-tout').css("background-color", color);
                 // $('#style').remove();
                 // $('head').append(link2);
             };
