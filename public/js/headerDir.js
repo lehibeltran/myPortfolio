@@ -5,16 +5,12 @@ angular.module('myApp').directive('headerDir', function ($interval) {
         link: function (scope, elem, attrs) {
             scope.setTheme = function (theme) {
                 var link = document.createElement('link');//, link2 = document.createElement('link');
-
                 link.setAttribute("id", "bootstrap");
                 //link2.setAttribute("id", "style");
-
                 link.rel = 'stylesheet';
                 //link2.rel = 'stylesheet';
-
-                link.href = "../styles/" + theme + "/bootstrap.min.css";
+                link.href = "styles/" + theme + "/bootstrap.min.css";
                 //link2.href = "styles/lb.css";
-
                 $('#bootstrap').remove();
                 $('head').append(link);
                 // $('#style').remove();
