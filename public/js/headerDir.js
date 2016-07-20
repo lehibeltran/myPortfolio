@@ -23,7 +23,7 @@ angular.module('myApp').directive('headerDir', function ($interval) {
             var ctx = canvas.getContext("2d");
 
             //Canvas dimensions
-            var W = window.innerWidth; var H = window.innerHeight;
+            var W = window.innerWidth; var H = 526;
             canvas.width = W;
             canvas.height = H;
 
