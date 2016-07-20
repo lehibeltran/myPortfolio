@@ -23,7 +23,9 @@ angular.module('myApp').directive('headerDir', function ($interval) {
             var ctx = canvas.getContext("2d");
 
             //Canvas dimensions
-            var W = 1427; var H = 526;
+            var W = window.innerWidth; var H = 500;
+            canvas.width = W;
+            canvas.height = H;
 
             //Lets create an array of particles
             var particles = [];
@@ -54,7 +56,7 @@ angular.module('myApp').directive('headerDir', function ($interval) {
                 this.radius = Math.random()*2+1;
             }
 
-            var x = 100; var y = 100;
+            //var x = 100; var y = 100;
 
             //Lets animate the particle
             function draw()
