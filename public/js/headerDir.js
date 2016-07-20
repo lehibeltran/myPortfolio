@@ -20,6 +20,7 @@ angular.module('myApp').directive('headerDir', function ($interval) {
             // call the resizeCanvas() function each time
             // the window is resized.
             window.addEventListener('resize', resizeCanvas, false);
+            window.addEventListener('orientationchange', resizeCanvas, false);
             //Lets create a simple particle system in HTML5 canvas and JS
             //Initializing the canvas
             var canvas = document.getElementById("canvas");
