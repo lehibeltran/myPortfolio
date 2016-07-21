@@ -16,7 +16,6 @@ body-dir .section-tout {
     position: relative;
     width: 100%;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
-    z-index: 3;
     padding-top: 20px;
 }
 #canvas {
