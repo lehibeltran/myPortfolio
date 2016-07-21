@@ -26,7 +26,7 @@ angular.module('myApp').directive('headerDir', function ($interval) {
             function resizeCanvas() {
                 //Canvas dimensions
                 W = window.innerWidth;
-                H = 526;
+                H = window.innerHeight;
                 canvas.width = W;
                 canvas.height = H;
             }
