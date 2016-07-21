@@ -1,6 +1,6 @@
 /*------------------ @reset ------------------*/
 body,html {margin:0;padding: 0;width: 100%;height:100%;}
-#home{
+#home {
     height: 526px;
     position: fixed;
     top: 0;
@@ -13,11 +13,11 @@ body-dir .section-tout {
     position: relative;
     width: 100%;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
-    z-index: 3;
+    /*z-index: 3;*/
     padding-top: 20px;
 }
 #canvas {
-    background-image: url('../images/starryn.png');
+    background-image: url('../images/starryn.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;

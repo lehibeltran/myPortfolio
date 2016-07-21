@@ -37,7 +37,7 @@ angular.module('myApp').directive('headerDir', function ($interval) {
             }
             //Lets create an array of particles
             var particles = [];
-            for(var i = 0; i < 10; i++)
+            for(var i = 0; i < 3; i++)
             {
                 //This will add 50 particles to the array with random positions
                 particles.push(new create_particle());
