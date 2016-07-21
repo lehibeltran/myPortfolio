@@ -16,10 +16,9 @@ body-dir .section-tout {
     position: relative;
     width: 100%;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
-    /*z-index: 3;*/
+    z-index: 3;
     padding-top: 20px;
 }
-canvas { display:block; } /* To remove the scrollbars */
 #canvas {
     background-image: url('../images/starryn.jpg');
     background-repeat: no-repeat;
@@ -221,40 +220,17 @@ header-dir h2 span {
     background-position: center center;
 }
 
-/*@media only screen and (max-width: 640px) {*/
-    /*.portfolio,*/
-    /*.portfolio .column,*/
-    /*footer,*/
-    /*#contact form,*/
-    /*#container,*/
-    /*#container h2 span { width: 100%; box-sizing: border-box; }*/
-
-    /*#container { margin-bottom: 0; }*/
-
-    /*footer { padding-top: 0; padding-bottom: 10px; }*/
-
-    /*.portfolio section a.item,*/
-    /*.portfolio section a.item img,*/
-    /*.portfolio section.thirds,*/
-    /*.portfolio section.thirds:nth-child(2),*/
-    /*.portfolio section.column:nth-child(2),*/
-    /*.portfolio section.column { padding: 0; margin: 0; float: none; width: 100%; }*/
-
-    /*.portfolio section a.item,*/
-    /*.portfolio section.thirds .icon,*/
-    /*.portfolio section.thirds .item { margin-bottom: 10px; }*/
-
-    /*#container,*/
-    /*#contact form {*/
-        /*padding-left: 10px;*/
-        /*padding-right: 10px;*/
-    /*}*/
-
-    /*section.ethos,*/
-    /*#totop,*/
-    /*#container h2 span em.righty { display: none; }*/
-
-    /*div.button { padding-top: 10px; }*/
-    /*header .ryan { padding-top: 120px; }*/
-    /*header h2 span { padding-top: 0; padding-bottom: 20px; }*/
-/*}*/
+@media only screen and (max-width: 1024px) {
+    body-dir .section-tout, #contact {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    body-dir .section-tout {
+        overflow-x: hidden;
+        margin-bottom: 0;
+    }
+    #contact, body-dir .section-tout, body-dir .section-tout h2 span {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
