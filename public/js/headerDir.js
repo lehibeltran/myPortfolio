@@ -4,18 +4,13 @@ angular.module('myApp').directive('headerDir', function ($interval) {
         restrict: 'E',
         link: function (scope, elem, attrs) {
             scope.setTheme = function (theme, color) {
-                var link = document.createElement('link');//, link2 = document.createElement('link');
+                var link = document.createElement('link');
                 link.setAttribute("id", "bootstrap");
-                //link2.setAttribute("id", "style");
                 link.rel = 'stylesheet';
-                //link2.rel = 'stylesheet';
                 link.href = "styles/" + theme + "/bootstrap.min.css";
-                //link2.href = "styles/lb.css";
                 $('#bootstrap').remove();
                 $('head').append(link);
                 $('body-dir > .section-tout').css("background-color", color);
-                // $('#style').remove();
-                // $('head').append(link2);
             };
             // Register an event listener to
             // call the resizeCanvas() function each time
