@@ -12,14 +12,14 @@ body-dir {
 }
 body-dir .section-tout {
     margin: 526px auto 0 auto;
-    background-color: #222222;
+    background-color: #ffffff;
     position: relative;
     width: 100%;
     box-shadow: 0 0 5px rgba(0,0,0,.2);
     padding-top: 20px;
 }
 #canvas {
-    background-image: url('../images/starryn.jpg');
+    background-image: url('../images/starsdefined.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
